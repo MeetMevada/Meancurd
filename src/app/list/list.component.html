@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="card">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Dob</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of Users">
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.mobile }}</td>
+                    <td>{{ user.dob }}</td>
+                    <td>
+                        <input type="button" class="btn btn-danger" value="Delete" (click)="onDelete(user._id)">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

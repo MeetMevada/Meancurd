@@ -1,0 +1,33 @@
+<div class="container">
+    <br>
+    <br>
+    <h2>The MEAN Curd</h2>
+    <br>
+    
+    <div class="card">
+        <form [formGroup]="form">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" formControlName="name">
+                </div>
+                <div class="col-md-3">
+                    <label for="mobile">Mobile</label>
+                    <input type="text" class="form-control" formControlName="mobile">
+                </div>
+                <div class="col-md-3">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" formControlName="email">
+                </div>
+                <div class="col-md-3">
+                    <label for="dob">D.O.B</label>
+                    <input type="date" class="form-control" formControlName="dob">
+                </div>
+            </div>
+            <br>
+            <div align="center">
+                <input type="button" value="Submit" class="btn btn-info" (click)="onSubmit()">
+            </div>
+        </form>
+    </div>
+</div>
